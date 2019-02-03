@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.startButton {
+    color: #fff;
+    background-color: #11dd99;
+    border: 2px solid #11dd99;
+    border-radius: 10px;
+    box-shadow: 1px 2px #222;
+    cursor: pointer;
+}
+
+.startOverButton {
+    color: #fff;
+    background-color: #ee6666;
+    border: 2px solid #ee6666;
+    border-radius: 10px;
+    box-shadow: 1px 2px #222;
+    cursor: pointer;
+}
+
+.goBackButton {
+
+}
+
+.startOverGoBackBtns {
+  width: 250px;
+  height: 50px;
+  background-color: #34ed2d;
+}
+
+.btnsWrapperWrapper {
+  /* width: auto; */
+  /* width: 700px;
+  height: 500px; */
+  /* font-size: 10; */
+  margin: 10px;
+  background-color: #3dd;
+  color: #222;
+}
+
+.btnsWrapper {
+  background-color: #d4d;
+  margin: 10px;
+}
+
+.btns {
+  margin: 60px 30px;
+  /* justify-content: center;
+  align-items: center; */
+  /* padding: 20px; */
+  text-align: center;
+  /* width: 33.3%; */
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position:relative;
+  color: #ee6666;
+  /* max-width: 100px; */
+  font-size: 14px;
+  background-color: #f7ffe5;
+  border: 2px solid #c0f93e;
+  border-radius: 8px;
+  box-shadow: 1px 2px #222;
+  cursor: pointer;
+}
+
+.btnAWrapper{
+  background-color: #2af;
+  margin: 10px;
+}
+
+.btnBWrapper {
+  background-color: #0e0;
+  margin: 10px;
+}
+
+.App-header {
+  background-color: #ddd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
