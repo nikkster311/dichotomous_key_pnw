@@ -1,0 +1,42 @@
+.btns {
+  margin: 30px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position:relative;
+  color: #ee6666;
+  font-size: 14px;
+  background-color: #f7ffe5;
+  border: 2px solid #c0f93e;
+  border-radius: 8px;
+  box-shadow: 1px 2px #222;
+  cursor: pointer;
+}
+
+.startButton {
+    color: #fff;
+    background-color: #11dd99;
+    border: 2px solid #11dd99;
+    border-radius: 10px;
+    box-shadow: 1px 2px #222;
+    cursor: pointer;
+}
+
+.startOverButton {
+    color: #fff;
+    background-color: #ee6666;
+    border: 2px solid #ee6666;
+    border-radius: 10px;
+    box-shadow: 1px 2px #222;
+    cursor: pointer;
+}
+
+.goBackButton {
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #222;
+  border-radius: 10px;
+  box-shadow: 1px 2px #777;
+  cursor: pointer;
+}
