@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+  background-color: #ddd;
+  height: 100%;
+}
+
+.startOverGoBackBtns {
+  width: 250px;
+  height: 100px;
+  margin: auto;
+}
+
+.runningWrapper {
+  margin: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.btnsWrapper {
+  /* background-color: #d4d; */
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+}
+
+.btnAWrapper{
+  background-color: #2af;
+  margin: 10px;
+}
+
+.btnBWrapper {
+  background-color: #0e0;
+  margin: 10px;
+}
+
+.prevClickedString {
+  font-size: 12px;
+}
+.App-header {
+  /* background-color: #ddd; */
+  /* min-height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* color: white; */
+}
+
+.resultSection {
+
+}
