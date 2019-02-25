@@ -46,9 +46,12 @@ class App extends Component {
 
 //this allows button a and b to be shown for the first time
     onBegin = () => {
+      console.log("onBegin... ")
+      console.log("stringAllClicked is " + stringAllClicked + " and allClickedValuesList is " + allClickedValuesList)
       stringAllClicked = "" //needs to be reset
       allClickedValuesList = [] //needs to be reset
-      this.setState({ startScreen: false, running: true, resultFound: false, stringAll: stringAllClicked, noValues: true})
+      console.log("stringAllClicked is " + stringAllClicked + " and allClickedValuesList is " + allClickedValuesList)
+      this.setState({ startScreen: false, running: true, resultFound: false, stringAll: stringAllClicked, noValues: true, buttonA: "conifer", buttonB: "broadleaf"})
     };
 
     resultHandler = () => {
@@ -97,8 +100,12 @@ class App extends Component {
 
 
     goBack = () => {
+      console.log("goBack..")
       allClickedValuesList.splice(-1, 1) //remove last value from allClickedValuesList
+      console.log("allClickedValuesList is " + allClickedValuesList)
       stringAllClicked = allClickedValuesList.join(", ") //updates string
+      console.log("stringAllClicked is " + stringAllClicked)
+      console.log("allClickedValuesList.length is " + allClickedValuesList.length)
       if (allClickedValuesList.length > 0) { //if there is something in the list of stored clicks..
           clickedValue = allClickedValuesList[allClickedValuesList.length - 1]
           this.buttonClickHandler(); //reassign clickedvalue to the last item in updated allClickedValuesList
@@ -112,7 +119,6 @@ class App extends Component {
     return (
       <div className="App">
         {console.log(this.state)}
-        <p>dichotomous key</p>
           {this.state.startScreen ? <div>
             <button className="startButton" type="button" onClick={this.onBegin.bind(this)}>click here to start</button>
           </div> : null}
@@ -129,14 +135,14 @@ class App extends Component {
           </div>
           <div className="startOverGoBackBtns">
             {!this.state.noValues ?
-              <button className="startOverButton" type="button" onClick={this.onBegin.bind(this)}>Start over</button> :
+              <button className="startOverButton" type="button" onClick={this.onBegin}>Start over</button> :
               null}
             {this.state.resultFound ?
-              <button className="startOverButton" type="button" onClick={this.onBegin.bind(this)}>Start over</button> :
+              <button className="startOverButton" type="button" onClick={this.onBegin}>Start over</button> :
               null}
             {this.state.noValues ?
               null :
-              <button className="goBackButton" type="button" onClick={this.goBack.bind(this)}>Go back</button>}
+              <button className="goBackButton" type="button" onClick={this.goBack}>Go back</button>}
           </div>
       </div>
     );
