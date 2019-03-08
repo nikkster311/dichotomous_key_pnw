@@ -1,30 +1,89 @@
+/* White
+#E8F7EE
+
+grey
+#B8C4BB
+
+gold
+#F3A712
+
+maroon
+#663F46
+
+brown
+#534D41 */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Libre+Franklin");
+
+/* ----------------ALL APP---------------- */
+
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: auto;
+}
 .App {
   text-align: center;
-  background-color: #ddd;
-  height: 100vh;
+  background-image: linear-gradient(to bottom right, #663F46, #54344A);
+  /* height: 100vh; */
 }
+
+
+/* ----------------HEADER FOOTER---------------- */
+
+.App-header {
+  color: #534D41;
+  background-color: #F3A712;
+  font-family: "Josefin Sans";
+}
+
+footer {
+  background-color: #B8C4BB;
+}
+footer a{
+  color: #534D41;
+  padding: 10px;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #663F46;
+  text-decoration: underline;
+}
+
+
+
+/* -------------RUNNING WRAPPERS--------------- */
 
 .startOverGoBackBtns {
   width: 250px;
-  height: 100px;
   margin: auto;
+  padding: 0px 0px 50px 0px;
+  background-color: #456;
 }
 
 .runningWrapper {
-  padding: 10px;
+  /* padding: 10px; */
   color: #222;
   text-align: center;
+  background-color: #22e;
   /* position: relative; */
 }
 
 .btnsWrapper {
-  /* background-color: #d4d; */
-  margin: 150px 10px 10px 10px;
-  position: relative;
-  width: 200px;
+  background-color: #d4d;
+  margin: 10px;
+  /* position: relative; */
+  /* width: 200px; */
   display: inline-block;
   width: 50vw;
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .btnAWrapper{
@@ -37,22 +96,22 @@
   margin: 10px;
 }
 
+/* ---------------STRING OF CLICKED-------------- */
+
 .prevClickedString {
-  font-size: 12px;
+  font-size: 1.25em;
   width: 80%;
+  background-color: #333;
   margin: auto;
 }
-.App-header {
-  /* background-color: #ddd; */
-  /* min-height: 100vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* color: white; */
-}
+
+
+/* -----------RESULT-------------- */
 
 .resultSection {
-  padding: 10px;
+  font-size: 2em;
+  padding: 40px;
+  font-family: "Josefin Sans";
+  color: #E8F7EE;
   /* background-color: #390; */
 }

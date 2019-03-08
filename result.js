@@ -13,8 +13,10 @@ class Result extends React.Component{
   render(props) {
     return(
       <section className="resultSection">
-        <h3>You're looking at a</h3>
-        <h1>{this.props.result}</h1>
+        <div className="content-wrap">
+          <h3>You're looking at a</h3>
+          <h1>{this.props.result}</h1>
+        </div>
       </section>
 
     )

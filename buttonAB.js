@@ -298,15 +298,19 @@ const Buttons = (props) => {
 
   return (
     <div className="runningWrapper">
-      <div className="btnsWrapper">
-        <div className="btnAWrapper">
-          <button className="btns" value={props.buttonA} onClick={props.change}>{props.buttonA}</button>
-        </div>
-        <div className="btnBWrapper">
-          <button className="btns" value={props.buttonB} onClick={props.change}>{props.buttonB}</button>
+      <div className="content-wrap">
+      {props.List === [] ? null : <p className="prevClickedString">your searched values are: {props.List}</p>}
+      </div>
+      <div className="content-wrap">
+        <div className="btnsWrapper">
+          <div className="btnAWrapper">
+            <button className="btns" value={props.buttonA} onClick={props.change}>{props.buttonA}</button>
+          </div>
+          <div className="btnBWrapper">
+            <button className="btns" value={props.buttonB} onClick={props.change}>{props.buttonB}</button>
+          </div>
         </div>
       </div>
-      {props.List === [] ? null : <p className="prevClickedString">your searched values are: {props.List}</p>}
     </div>
   )
 };

@@ -118,6 +118,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <header className="App-header">
+          <div className="content-wrap">
+            <h1>Dichotomous Key</h1>
+          </div>
+        </header>
+
         {console.log(this.state)}
           {this.state.startScreen ? <div>
             <button className="startButton" type="button" onClick={this.onBegin.bind(this)}>click here to start</button>
@@ -144,6 +150,19 @@ class App extends Component {
               null :
               <button className="goBackButton" type="button" onClick={this.goBack}>Go back</button>}
           </div>
+
+          <footer>
+            <div className="content-wrap">
+              <a href="mailto:nikki@nikkster.tech">
+                <i className="fa fa-envelope fa-fw"></i>
+              </a>
+              <a href="https://www.nikkster.tech">nikkster.tech</a>
+              <a href="http://www.twitter.com/nikksterdottech">
+                <i className="fab fa-twitter fa-fw"></i>
+              </a>
+            </div>
+          </footer>
+
       </div>
     );
   }
