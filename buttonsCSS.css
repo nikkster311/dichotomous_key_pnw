@@ -1,42 +1,74 @@
+/* White
+#E8F7EE
+
+grey
+#B8C4BB
+
+gold
+#F3A712
+
+maroon
+#663F46
+
+brown
+#534D41 */
+
+
+/* ----------A & B---------- */
+
 .btns {
-  margin: 30px;
-  text-align: center;
-  width: auto;
-  height: auto;
-  display: inline-block;
-  position:relative;
-  color: #ee6666;
-  font-size: 14px;
-  background-color: #f7ffe5;
-  border: 2px solid #c0f93e;
+  margin: 20px;
+  /* text-align: center; */
+  /* width: auto; */
+  /* height: auto; */
+  /* display: inline-block; */
+  /* position:relative; */
+  font-family: "Libre Franklin";
+  color: #534D41;
+  font-size: 1.25em;
+  background-color: #F3A712;
+  border: 2px solid #DD9811;
   border-radius: 8px;
   box-shadow: 1px 2px #222;
   cursor: pointer;
 }
 
+
+/* ---------START--------- */
+
 .startButton {
     color: #fff;
+    MARGIN: 30vh 0px 30vh 0px;
     background-color: #11dd99;
     border: 2px solid #11dd99;
     border-radius: 10px;
     box-shadow: 1px 2px #222;
     cursor: pointer;
+    font-size: 1.25em;
+
 }
 
+
+/* ---------START OVER / GO BACK----------- */
+
 .startOverButton {
-    color: #fff;
-    background-color: #ee6666;
-    border: 2px solid #ee6666;
+    color: #534D41;
+    background-color: #E8F7EE;
+    border: 2px solid #B8C4BB;
     border-radius: 10px;
     box-shadow: 1px 2px #222;
     cursor: pointer;
+    font-size: 1.25em;
+
 }
 
 .goBackButton {
-  color: #fff;
-  background-color: #222;
-  border: 2px solid #222;
+  color: #534D41;
+  background-color: #E8F7EE;
+  border: 2px solid #B8C4BB;
   border-radius: 10px;
   box-shadow: 1px 2px #777;
   cursor: pointer;
+  font-size: 1.25em;
+
 }
