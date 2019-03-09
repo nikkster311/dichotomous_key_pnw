@@ -30,7 +30,7 @@ html{
 }
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom right, #663F46, #54344A);
+  background-image: linear-gradient(to bottom right, #663F46, #41292d);
   /* height: 100vh; */
 }
 
@@ -45,6 +45,7 @@ html{
 
 footer {
   background-color: #B8C4BB;
+  padding: 30px;
 }
 footer a{
   color: #534D41;
@@ -64,35 +65,30 @@ footer a:hover{
 .startOverGoBackBtns {
   width: 250px;
   margin: auto;
-  padding: 0px 0px 50px 0px;
-  background-color: #456;
+  display: inline;
+  /* background-color.: #456; */
 }
 
 .runningWrapper {
-  /* padding: 10px; */
   color: #222;
   text-align: center;
-  background-color: #22e;
-  /* position: relative; */
+  /* height: 68vh; */
 }
 
 .btnsWrapper {
-  background-color: #d4d;
-  margin: 10px;
-  /* position: relative; */
-  /* width: 200px; */
+  /* background-color: #d4d; */
+  margin: 40px;
   display: inline-block;
   width: 50vw;
-  /* height: 50vh; */
 }
 
 .btnAWrapper{
-  background-color: #2af;
+  /* background-color: #2af; */
   margin: 10px;
 }
 
 .btnBWrapper {
-  background-color: #0e0;
+  /* background-color: #0e0; */
   margin: 10px;
 }
 
@@ -101,17 +97,23 @@ footer a:hover{
 .prevClickedString {
   font-size: 1.25em;
   width: 80%;
-  background-color: #333;
+  /* font-weight: bold; */
+  color: #E8F7EE;
+  /* background-color: #333; */
   margin: auto;
 }
 
 
 /* -----------RESULT-------------- */
 
-.resultSection {
-  font-size: 2em;
-  padding: 40px;
+.resultSection h1 {
+  font-size: 2.5em;
   font-family: "Josefin Sans";
   color: #E8F7EE;
-  /* background-color: #390; */
+}
+
+.resultSection h3 {
+  font-size: 2em;
+  font-family: "Josefin Sans";
+  color: #E8F7EE;
 }

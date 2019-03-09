@@ -136,8 +136,8 @@ const buttonOptions = [{
   b: "leaves leaves have more than 5 lobes"
 }, {
   clicked: "leaves have fewer than 5 lobes",
-  a: "leaves have 4 lobes",
-  b: "leaves have fewer than 4 lobes"
+  a: "Leaves have 4 lobes",
+  b: "Leaves have fewer than 4 lobes"
 }, {
   clicked: "Cones soft/leathery" //DONE
 }, {
@@ -163,7 +163,7 @@ const buttonOptions = [{
 }, {
   clicked: "Needles blunt" //DONE
 }, {
-  clicked: "Leaves palmately compounded" //DONE
+  clicked: "Leaves palmately compound" //DONE
 }, {
   clicked: "Leaf bases opposite" //DONE
 }, {
@@ -192,6 +192,8 @@ const buttonOptions = [{
   clicked: "Leaves have fewer than 4 lobes" //DONE
 }, {
   clicked: "Leaves have 4 lobes" //DONE
+}, {
+  clicked: "leaves not deeply lobed" //DONE
 }];
 
 const resultOptions = [
@@ -291,16 +293,16 @@ const resultOptions = [
   }, {
     clicked: "Leaves have fewer than 4 lobes",
     result: "Apple/Pear"
-  },
+  }, {
+    clicked: "leaves not deeply lobed",
+    result: "result unknown"
+  }
 ];
 
 const Buttons = (props) => {
 
   return (
     <div className="runningWrapper">
-      <div className="content-wrap">
-      {props.List === [] ? null : <p className="prevClickedString">your searched values are: {props.List}</p>}
-      </div>
       <div className="content-wrap">
         <div className="btnsWrapper">
           <div className="btnAWrapper">
