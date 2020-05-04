@@ -104,10 +104,11 @@ class App extends Component {
             <h1>Dichotomous Key</h1>
           </div>
         </header>
-          {this.state.startScreen ? <div className="content-wrap">
+        <div className="content-wrap main">
+          {this.state.startScreen ? <div>
             <button className="startButton" type="button" onClick={this.onBegin.bind(this)}>click here to start</button>
           </div> :
-            <div className="content-wrap">
+            <div>
               {stringAllClicked === "" ? null : <p className="prevClickedString">Characteristics of this plant: {this.state.stringAll}</p>}
             </div>}
           <div>
@@ -135,6 +136,7 @@ class App extends Component {
               </div> :
               null}
           </div>
+        </div>
 
           <footer>
             <div className="content-wrap">

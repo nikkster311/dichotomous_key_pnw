@@ -35,6 +35,12 @@ html{
 }
 
 
+/* ----------------MAIN CONTENT BTWN HEADER AND FOOTER---------------- */
+
+.main {
+    min-height: calc(100vh - 215.88px);
+}
+
 /* ----------------HEADER FOOTER---------------- */
 
 .App-header {
@@ -45,7 +51,6 @@ html{
 
 footer {
   background-color: #B8C4BB;
-  padding: 30px;
 }
 footer a{
   color: #534D41;
